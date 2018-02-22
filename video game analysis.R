@@ -17,7 +17,7 @@ ggplot(global_sales_by_genre, aes(x= reorder(Genre, -Global_Sales), y=Global_Sal
        y="Global Sales (millions of copies)") + 
   theme(axis.text.x = element_text(angle=65, vjust=0.6))
 # save
-ggsave("global sales by genre.jpg", last_plot())
+ggsave("global sales by genre.png", last_plot())
 
 
 ### NA Sales by Genre
@@ -33,7 +33,7 @@ ggplot(na_sales_by_genre, aes(x= reorder(Genre, -NA_Sales), y=NA_Sales)) +
        y="NA Sales (millions of copies)") + 
   theme(axis.text.x = element_text(angle=65, vjust=0.6))
 # save
-ggsave("NA sales by genre.jpg", last_plot())
+ggsave("NA sales by genre.png", last_plot())
 
 
 ### EU Sales by Genre
@@ -49,7 +49,7 @@ ggplot(eu_sales_by_genre, aes(x= reorder(Genre, -EU_Sales), y=EU_Sales)) +
        y="EU Sales (millions of copies)") + 
   theme(axis.text.x = element_text(angle=65, vjust=0.6))
 # save
-ggsave("EU sales by genre.jpg", last_plot())
+ggsave("EU sales by genre.png", last_plot())
 
 
 ### JP Sales by Genre
@@ -65,7 +65,7 @@ ggplot(jp_sales_by_genre, aes(x= reorder(Genre, -JP_Sales), y=JP_Sales)) +
        y="JP Sales (millions of copies)") + 
   theme(axis.text.x = element_text(angle=65, vjust=0.6))
 # save
-ggsave("JP sales by genre.jpg", last_plot())
+ggsave("JP sales by genre.png", last_plot())
 
 
 
